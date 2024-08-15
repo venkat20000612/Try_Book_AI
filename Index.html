@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title -->
+    <title>Book AI</title>
+
+    <!-- saying meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://raw.githubusercontent.com/adarshagupta/trybookai/main/logo.png" />
+
+    
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+        integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/Index.css" />
+</head>
+
+<body>
+
+    <!-- Toggle button Starts -->
+
+    <div class="container toggle-check">
+        <input class="input-btn" type="checkbox" id="check">
+        <label for="check" class="toggle-button">D / L</label>
+    </div>
+
+    <!-- Toggle button Ends -->
+
+    <button id="gototop-btn" onclick="goToTop()"><img src="images/up-arrow.png" alt="uparrow"></button>
+
+
+    <!-- Navbar section start -->
+
+    <section class="navbar-banner">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="row align-items-center">
+                    <div class="logo col-6">
+                        <div class="color-mark"></div>
+                        <img src="https://raw.githubusercontent.com/adarshagupta/trybookai/main/logo.png" width="50px"
+                            alt="BookAI Logo" />BookAI
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="images/menu.png" alt="nav-bar" class="menu-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-items" id="navbarNav">
+                    <ul class="navbar-nav ms-auto navbar-items-2">
+                        <li class="nav-item">
+                            <a class="active btns" href="#Feature">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active btns" href="#How-It-Work">How It Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active btns" href="#Roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active btns" href="api.html">API</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active btns" href="api.html#Pricing">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active btns" href="api.html#Pricing">Models</a>
+                        </li>
+                        <button type="button" class="btn btn-md mr-3"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Login / Sign Up</button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Navbar Scetion Ends -->
+
+
+    <!-- Banner Section Starts -->
+    <section class="banner">
+        <h1>
+            Explore the Possibilities of
+            <span class="banner-text">AI Book Writing</span> with
+            <h1>BookAI</h1>
+        </h1>
+        <p class="sub-text">
+            Unleash the power of AI to create captivating books in minutes.
+            Download, Distribute wherever you want. Generate unlimited free books
+        </p>
+        <a href="#" class="get-button-1">Get Started</a>
+        <a href="#" class="get-button-2">Get API Access</a>
+
+    </section>
+    <!-- Banner Section Ends -->
+
+
+    <!-- Main Image content Section Starts -->
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="main-images-content">
+                    <img src="https://raw.githubusercontent.com/adarshagupta/trybookai/main/book2.png"
+                        alt="AI Book Generator" />
+                    <div class="floating-image top-left">
+                        <div class="floating-icon"></div>
+                        <img src="https://raw.githubusercontent.com/adarshagupta/trybookai/main/public-assets/paradox.png"
+                            alt="" sizes="" srcset="" width="90px" height="130px">
+                    </div>
+                    <div class="floating-image bottom-right">
+                        <div class="floating-icon"></div>
+                        <span class="right-content">Chapter complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Image content Section Ends -->
+
+
+    <!-- Features Section Starts -->
+
+    <section id="Feature" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Writing</h3>
+                    <p>Generate high-quality content with advanced AI technology.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Custom Genres</h3>
+                    <p>Create stories in any genre or blend multiple styles.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Instant Download</h3>
+                    <p>Get your completed book in various formats instantly.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Multilingual</h3>
+                    <p>Generate content in multiple languages effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section Ends -->
+
+
+    <!-- How It Work Section Starts -->
+
+    <section id="How-It-Work" class="how-it-works">
+        <div class="container how-it-work-items">
+            <div class="row">
+                <h2>How It Works</h2>
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Choose Your Genre</h3>
+                            <p>
+                                Select from a wide range of genres or create a custom blend.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Provide Key Details</h3>
+                            <p>
+                                Input main characters, plot points, or themes to guide the AI.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>AI Generation</h3>
+                            <p>Our advanced AI creates your book based on your inputs.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Review and Download</h3>
+                            <p>
+                                Review your generated book and download in your preferred
+                                format.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How It Work Section Ends -->
+
+
+    <!-- Sample Book Cards Section Starts -->
+
+    <section class="book-samples">
+        <div class="container">
+            <div class="row">
+                <h2 class="sample-head">Sample Books Generated by BookAI</h2>
+                <p class="sample-para-text">
+                    Explore some of the captivating books created using our AI technology.
+                </p>
+                <div class="sample-cards">
+                    <div class="book-sample">
+                        <div class="smaple-card-1"></div>
+                        <h3>Science Fiction</h3>
+                        <p class="book-excerpt">
+                            "As Dr. Elara stepped through the shimmering portal, she knew
+                            there was no turning back. The fate of two universes now rested in
+                            her hands..."
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="book-sample">
+                        <div class="smaple-card-2"></div>
+                        <h3>Mystery</h3>
+                        <p class="book-excerpt">
+                            "The old lighthouse stood silent, its beacon long extinguished.
+                            But on foggy nights, some swore they could still see its ghostly
+                            light..."
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="book-sample">
+                        <div class="smaple-card-3"></div>
+                        <h3>Fantasy</h3>
+                        <p class="book-excerpt">
+                            "The ancient prophecy spoke of a child born with starlight in
+                            their eyes. As the comet blazed overhead, the kingdom held its
+                            breath..."
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smaple Book Cards Section Ends -->
+
+    <!-- Video Section Starts -->
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <section class="main-content">
+                    <div class="ai-demo">
+                        <div class="demo-video">
+                            <iframe src="https://demo.arcade.software/OvUdnIEhwNxssQsB3COY?embed&show_copy_link=true"
+                                title="BookAI: Revolutionary AI-Powered Book Generation | Create Professional Books in Minutes"
+                                frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                allow="clipboard-write" class="video-source"></iframe>
+                        </div>
+
+                        <div class="floating-image bottom-right">
+                            <div class="floating-icon"></div>
+                            <span class="right-content">Chapter complete</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section Ends -->
+
+
+    <!-- Road Map Section Starts -->
+
+    <section id="Roadmap" class="roadmap">
+        <div class="container roadmap-cards">
+            <div class="row">
+                <h2>Roadmap</h2>
+                <div class="roadmap-container">
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3>Advanced Character Development</h3>
+                            <p>AI-powered tool for creating deep, complex characters.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3>E-book Platform Integration</h3>
+                            <p>Seamless publishing to popular e-book platforms.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3>Collaborative Writing</h3>
+                            <p>Co-create stories with other authors or AI assistants.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3>AI Cover Art Generation</h3>
+                            <p>Create stunning book covers with AI-generated art.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Road Map Section Ends -->
+
+    <!-- Users Says Section Starts -->
+
+    <section class="users-section">
+        <div class="container users-review">
+            <div class="row">
+                <h2>What Our Users Say</h2>
+                <div class="users-container">
+                    <div class="users">
+                        <p>
+                            "BookAI revolutionized my writing process. I completed my debut
+                            novel in just two weeks!"
+                        </p>
+                        <p><strong>- Sarah J., Author</strong></p>
+                    </div>
+                    <div class="users">
+                        <p>
+                            "The AI-generated ideas helped me overcome writer's block. It's
+                            like having a co-author at your fingertips."
+                        </p>
+                        <p><strong>- Mark T., Aspiring Writer</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <Section class="form-section">
+            <div class="container form-block">
+                <div class="row">
+                    <h2 class="stay-heading">Stay Updated</h2>
+                    <p class="stay-text">
+                        Subscribe to our newsletter for the latest AI writing tips and BookAI
+                        updates.
+                    </p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required />
+                        <div class="form-button">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </Section>
+    </section>
+
+    <!-- Users Says Section Ends -->
+
+    <!-- Footer Section Starts -->
+
+    <footer>
+        <p>&copy; 2024 BookAI. All rights reserved.</p>
+        <div>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- Footer Section Ends -->
+    
+    
+    
+
+
+
+    <!-- Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="icons/js/all.js"></script>
+
+    <script src="icons/js/all.min.js"></script>
+    <script src="icons/js/solid.js"></script>
+    <script src="icons/js/solid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/brands.min.js"
+        integrity="sha512-giAmE8KpCT6HP3DEwIvW9LYVnDs79iIaKEYFTjH62EWoglWgdAJa1ahiLUfoc3NFaAeWM6E3VdQyH1Ob2dmwQw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

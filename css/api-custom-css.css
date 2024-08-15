@@ -1,0 +1,719 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f172a;
+    scroll-behavior: smooth;
+}
+
+
+/* Toggle button CSS Starts */
+
+.toggle-check{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.toggle-button{
+    background-color: #d2d2d2;
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    width: 51px;
+    height: 25px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    right: 80px;
+    top: 25px;
+    transition: 0.2s;
+}
+
+.toggle-button::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 25px;
+    height: 24px;
+    left: -1px;
+    border-radius: 200px;
+    transition: 0.2s;
+    mix-blend-mode: overlay;
+}
+
+.input-btn:checked + .toggle-button{
+    background-color: #4b0082;
+} 
+
+
+.input-btn:checked + .toggle-button::before{
+    transform: translateX(27px);
+} 
+
+.input-btn{
+    display: none;
+    position: sticky;
+}
+
+
+/* Toggle button CSS Ends */
+
+
+
+/* Header CSS Starts */
+
+header {
+    background-color: #6366f1;
+    padding: 33px 0;
+    text-align: center;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+h2, h3, h4 {
+    margin-top: 32px;
+    color: #a5b4fc;
+}
+
+/* Header CSS Ends */
+
+
+
+/* Navbar CSS Starts  */
+nav {
+    background-color: #1e293b;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 8px 16px;
+}
+
+nav ul li a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    letter-spacing: 0.4px;
+}
+
+nav ul li a:hover {
+    color: #22d3ee;
+}
+
+/* Navbar CSS Ends  */
+
+
+
+/* Main Section CSS Starts */
+.main-section{
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 3px;
+}
+/* Main Section CSS Ends */
+
+
+
+/* Overview Section CSS Starts */
+.overview-text {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 32px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+    margin-top: 25px;
+}
+
+.overview-text h2{
+    color: #a5b4fc;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.overview-text p{
+    color: #e2e8f0;
+}
+
+/* Overview Section CSS Ends */
+
+
+/* Authentication Section CSS Starts */
+
+.auth-text{
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 32px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+    margin-top: 25px;
+}
+
+
+.auth-text h2{
+    color: #a5b4fc;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.auth-text p{
+    color: #e2e8f0;
+}
+
+.auth-text pre{
+    border-radius: 4px;
+    padding: 16px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 15px;
+    border: 1px solid #334155;
+}
+
+.auth-text span{
+    font-family: 'Fira Code', monospace;
+    background-color: #1e293b;
+    border-radius: 4px;
+    padding: 16px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 15px;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+.auth-text button {
+    background: #22d3ee;
+    color: #0f172a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 16px;
+    text-align: left;
+   
+}
+
+.auth-text button:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.api-key{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #1e293b;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    border: 1px solid #334155;
+    word-break: break-all;
+}
+
+/* Authentication Section CSS Ends */
+
+
+
+/* EndPoints Section CSS Starts */
+
+.end-points-section{
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 32px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+    margin-top: 25px;
+}
+
+
+.end-points-section h2{
+    color: #a5b4fc;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.end-points-section h3{
+    color: #a5b4fc;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.end-points-section h4{
+    color: #a5b4fc;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 16px;
+    overflow: hidden;
+    border-radius: 8px; 
+    border: 1px solid #334155;
+}
+
+th, td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+th {
+    background-color: #6366f1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: #fff;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.end-points-section .generated-btn {
+    background-color: #6366f1;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #e2e8f0;
+    margin-top: 20px;
+}
+
+.end-points-section .post-btn {
+    background-color: #22d3ee;
+    color: #1e293b;
+    border-radius: 4px;
+    padding: 5px 14px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+.parameter-table td:first-child {
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+
+pre, span {
+    font-family: 'Fira Code', monospace;
+    background-color: #1e293b;
+    border-radius: 4px;
+    padding: 16px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 15px;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+
+/* EndPoints Section CSS Ends */
+
+
+
+/* Tutorial Section CSS Starts */
+
+
+.tutorial-text {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 32px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+    margin-top: 25px;
+}
+
+.tutorial-text h2{
+    color: #a5b4fc;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.tutorial-text h3{
+    color: #a5b4fc;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tutorial-text p{
+    color: #e2e8f0;
+}
+
+/* Tutorial Section CSS Ends */
+
+
+
+/* Code Example Section CSS Starts */
+
+.code-text{
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 32px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+    margin-top: 25px;
+}
+
+.code-text h2{
+    color: #a5b4fc;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.code-text h3{
+    color: #a5b4fc;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+pre, code {
+    font-family: 'Fira Code', monospace;
+    background-color: #1e293b;
+    border-radius: 4px;
+    padding: 16px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 15px;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+
+/* Code Example Section CSS Ends */
+
+
+/* Pricing Section CSS Start */
+
+.pricing-section-conetent{
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 32px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+    margin-top: 25px;
+}
+
+
+.pricing-section-conetent h2{
+    color: #a5b4fc;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pricing-section-conetent h3{
+    color: #a5b4fc;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.pricing-section-conetent p{
+    color: #e2e8f0;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 16px;
+    overflow: hidden;
+    border-radius: 8px; 
+    border: 1px solid #334155;
+}
+
+th, td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+th {
+    background-color: #6366f1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Pricing Section CSS Ends */
+
+
+
+/* Go to top button css starts */
+
+#gototop-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #110a1f;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  #gototop-btn img {
+    width: 30px;
+    height: 33px;
+  }
+  
+  
+  /* Go to top button css ends */
+
+
+
+
+
+
+
+/* Mobile Responsiveness Starts*/
+
+@media (max-width: 768px) {
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li{
+        margin: 8px 0;
+    }
+    
+    .main-section{
+        padding: 1.6px;
+    }
+    
+    section{
+        padding: 24px;
+    }
+    
+    table, th, td {
+        font-size: 14px;
+    }
+
+    .toggle-button{
+        position: relative;
+        position: fixed;
+        left: 0;
+        top: -200px;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .toggle-button{
+        position: relative;
+        position: fixed;
+        left: 50px;
+        top: 60px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header{
+        align-items: center;
+        justify-content: center;
+        width: 110%;
+    }
+
+    table, th, td {
+        font-size: 11px;
+        position: relative;
+        left: -13px;
+    }
+
+    table{
+        width: 10px;
+    }
+    
+    nav{
+        width: 110%;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li{
+        margin: 8px 0;
+        font-size: large;
+    }
+
+    #gototop-btn{
+        bottom: 18px;
+        right: 27px;
+    }
+
+    .toggle-button{
+        position: relative;
+        position: fixed;
+        left: 320px;
+        top: 10px;
+    }
+  }
+
+/* Mobile Responsiveness Ends */
+
+
+
+
+
+
+/* Toggle button CSS Changes in WebPage  Starts*/
+
+
+/* Default (Dark Theme) Styles */
+body {
+    background-color: #0f172a;
+    color: #f0f0f0;
+}
+
+/* Light Theme Styles */
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+/* Specific Elements Styling */
+body.light-theme nav ul li a,
+body.light-theme header,
+body.light-theme .overview-text h2,
+body.light-theme .overview-text p,
+body.light-theme .auth-text h2, 
+body.light-theme .auth-text p,
+body.light-theme .end-points-section h2,
+body.light-theme .end-points-section h3,
+body.light-theme .end-points-section h4,
+body.light-theme td,
+body.light-theme span,
+body.light-theme .tutorial-text h2,
+body.light-theme .tutorial-text h3,
+body.light-theme .tutorial-text p,
+body.light-theme .code-text h2,
+body.light-theme .code-text h3,
+body.light-theme .pricing-section-conetent h2,
+body.light-theme .pricing-section-conetent p,
+body.light-theme .pricing-section-conetent h3 {
+    color: #333;
+}
+
+body.light-theme .parameter-table td:first-child {
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+
+
+
+body.light-theme nav,
+body.light-theme .overview-text,
+body.light-theme .auth-text,
+body.light-theme .end-points-section,
+body.light-theme .tutorial-text,
+body.light-theme .code-text,
+body.light-theme .pricing-section-conetent{
+    background-color: #fff;
+    color: #333;
+    border: none;
+}
+
+
+body.light-theme .auth-text pre,
+body.light-theme pre,
+body.light-theme span,
+body.light-theme .code-text code,
+body.light-theme .auth-text span,
+body.light-theme .api-key {
+    border: 1px solid #334155;
+    background-color: #fff;
+    color: #333;
+}
+
+
+body.light-theme .generate-ApiKey{
+    background: #22d3ee;
+    color: #0f172a;
+}
+
+body.light-theme .generate-ApiKey:hover{
+    background: #0ea5e9;
+    color: #0f172a;
+}
+
+
+
+body.light-theme header{
+    background-color: #333;
+    color: #fff;
+}
+
+
+body.light-theme nav ul li a:hover{
+    color: #22d3ee;
+}
+
+/* Toggle button CSS Changes in WebPage  Ends*/
+
+

@@ -1,0 +1,944 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1e0533, #110a1f);
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Toggle button CSS Starts */
+
+.toggle-check{
+    display: flex;
+    position: relative;
+    top: 35px;
+    z-index: 1000;
+}
+
+.toggle-button{
+    background-color: #d2d2d2;
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    width: 51px;
+    height: 25px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    right: 75px;
+    top: 10px;
+    transition: 0.2s;
+}
+
+.toggle-button::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 25px;
+    height: 24px;
+    left: -1px;
+    border-radius: 200px;
+    transition: 0.2s;
+    mix-blend-mode: overlay;
+}
+
+.input-btn:checked + .toggle-button{
+    background-color: #4b0082;
+} 
+
+
+.input-btn:checked + .toggle-button::before{
+    transform: translateX(27px);
+} 
+
+.input-btn{
+    display: none;
+}
+
+
+/* Toggle button CSS Ends */
+
+
+
+/* Navbar CSS Starts */
+
+.menu-bar {
+    width: 100%;
+    max-width: 38px;
+    color: #fff;
+    background: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.color-mark {
+    width: 220px;
+    max-width: 100%;
+    height: 30px;
+    background: #5eb8fc;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.nav-item,
+a {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.navbar-items ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-items ul li a:hover {
+    color: #8331d1;
+}
+
+.navbar-items button {
+    background: #5eb8fc;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.navbar-items button:hover {
+    transform: translateY(-1px);
+    background-color: #5eb8fc;
+    color: #ffff;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: #5eb8fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    background: #5eb8fc;
+}
+
+/* .navbar-banner {
+    margin-top: 40px;
+} */
+
+/* Navbar CSS Ends */
+
+
+/* Banner Section CSS Starts */
+
+.banner {
+    position: relative;
+    z-index: 1;
+}
+
+.banner {
+    text-align: center;
+    padding: 80px 0 0px 20px;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.banner-text {
+    position: relative;
+    -webkit-text-fill-color: #4b0082;
+}
+
+.banner-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: #5eb8fc;
+}
+
+.sub-text {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #b3b3b3;
+}
+
+.get-button-1 {
+    display: inline-block;
+    background: #5eb8fc;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.get-button-1:hover {
+    transform: translateY(-3px);
+}
+
+.get-button-2 {
+    display: inline-block;
+    background: #726bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.get-button-2:hover {
+    transform: translateY(-3px);
+}
+
+/* Banner Scetion CSS Ends */
+
+
+/* Main Image content Section CSS Starts */
+
+.main-content {
+    margin-top: 80px;
+    position: relative;
+}
+
+.main-images-content {
+    background: #ffffff0d;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-images-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #0000004d;
+    transition: transform 0.3s ease;
+}
+
+.main-images-content img:hover {
+    transform: scale(1.02);
+}
+
+.floating-image {
+    position: absolute;
+    background: #ffffff1a;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.floating-image.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.floating-image.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-icon {
+    width: 24px;
+    height: 24px;
+    background: #5eb8fc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.right-content {
+    color: #fff;
+}
+
+/* Main Image content Section CSS Ends */
+
+/* Features Section CSS Starts */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #8a2be2, #4b0082);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.feature,
+h3 p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.feature h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Features Section CSS Ends */
+
+
+/* How It Work Section CSS Starts */
+.how-it-work-items {
+    margin-top: 80px;
+    background: #ffffff0d;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.step-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    background: #5eb8fc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex-grow: 1;
+}
+
+.step h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.step-content p {
+    color: #fff;
+    font-size: 16.5px;
+    font-weight: 500;
+}
+
+/* How It Work Section CSS Ends */
+
+
+
+/* Sample Book Cards Section CSS Starts */
+
+.book-samples {
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.sample-para-text {
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sample-head {
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.sample-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.book-sample {
+    flex-basis: calc(33.333% - 40px);
+    margin-bottom: 40px;
+    background: #ffffff0d;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.book-sample:hover {
+    transform: translateY(-10px);
+}
+
+.smaple-card-1 {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto 20px;
+    background-image: url("https://raw.githubusercontent.com/adarshagupta/trybookai/main/public-assets/paradox.png");
+    background-position: center;
+    /* Centers the image */
+    background-size: 100% 100%;
+    /* Stretches the image to cover 100% of width and height */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.smaple-card-2 {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto 20px;
+    background-image: url("https://raw.githubusercontent.com/adarshagupta/trybookai/main/public-assets/mist.png");
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.smaple-card-3 {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto 20px;
+    background-image: url("https://raw.githubusercontent.com/adarshagupta/trybookai/main/public-assets/ecos.png");
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.book-excerpt {
+    font-style: italic;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #8a2be2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #fff;
+}
+
+/* Sample Book Cards Section CSS Ends */
+
+
+/* Video Section CSS Starts */
+
+.demo-video {
+    position: relative;
+    padding-bottom: calc(47.46527777777778% + 41px);
+    height: 0;
+    width: 100%;
+}
+
+.video-source {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color-scheme: light;
+}
+
+/* Video Section CSS Ends */
+
+
+
+/* Road Map Section CSS Starts */
+
+.roadmap-cards {
+    margin-top: 100px;
+    background: #ffffff0d;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.roadmap h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.roadmap-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.roadmap-item {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.roadmap-icon {
+    width: 50px;
+    height: 50px;
+    background: #8a2be2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.roadmap-content {
+    flex-grow: 1;
+}
+
+.roadmap-item h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.roadmap h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.roadmap-content p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Road Map Section CSS Ends */
+
+
+/* Users Says Section CSS Starts */
+
+.users-review {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.users-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.users {
+    background: #ffffff0d;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 20px;
+    flex-basis: calc(50% - 20px);
+    transition: transform 0.3s ease;
+}
+
+.users:hover {
+    transform: translateY(-5px);
+}
+
+.users-review h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.users p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.stay-heading,
+.stay-text {
+    text-align: center;
+    color: #fff;
+}
+
+.stay-heading {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.stay-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container .stay-heading {
+    margin-top: 20px;
+}
+
+.form-block {
+    margin-top: 80px;
+    background: #ffffff0d;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+form {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 60%;
+    max-width: 300px;
+    margin-left: 26px;
+    border: 1px solid #333;
+}
+
+.form-button button {
+    background: #5eb8fc;
+    color: #fff;
+    border: none;
+    padding: 5px 45%;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 10px 26px;
+}
+
+.form-section button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Users Says Section CSS Ends */
+
+
+/* Footer SEction CSS Starts */
+
+footer {
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ffffff1a;
+}
+
+footer a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: -2px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Footer Section Css Ends */
+
+
+
+
+/* Go to top button css starts */
+
+#gototop-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0f172a;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  #gototop-btn img {
+    width: 17px;
+    height: 30px;
+  }
+  
+  
+  /* Go to top button css ends */
+
+
+
+
+
+
+/* Mobile Responsiveness Starts*/
+
+@media (max-width: 768px) {
+    
+    .feature {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .step,
+    .roadmap-item {
+        flex-basis: 100%;
+    }
+
+    .users {
+        flex-basis: 100%;
+    }
+
+    .toggle-button{
+        position: relative;
+        left: 560px;
+        top: 45px;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .toggle-button{
+        position: relative;
+        left: 210px;
+        top: 50px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    h1 {
+      font-size: 26px;
+    }
+
+    .feature {
+      flex-basis: 90%;
+    }
+
+    .input[type="email"] {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .form-button button {
+      width: 80%;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    #gototop-btn{
+        bottom: 18px;
+        right: 27px;
+    }
+
+    .toggle-button{
+        position: relative;
+        left: 340px;
+        top: 45px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .book-sample {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .book-sample {
+      flex-basis: 100%;
+    }
+  }
+
+/* Mobile Responsiveness Ends */
+
+
+
+
+
+
+
+/* Toggle button CSS Changes in WebPage  Starts*/
+
+
+/* Default (Dark Theme) Styles */
+body {
+    background: linear-gradient(135deg, #1e0533, #110a1f);
+    color: #f0f0f0;
+}
+
+/* Light Theme Styles */
+body.light-theme {
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* Specific Elements Styling */
+
+body.light-theme .navbar-items ul li a,
+body.light-theme .logo,
+body.light-theme .sub-text,
+body.light-theme .right-content,
+body.light-theme .banner h1,
+body.light-theme .banner-text, 
+body.light-theme .step-content p,
+body.light-theme .step-content h3,
+body.light-theme .feature h3,
+body.light-theme .feature p,
+body.light-theme .roadmap-content p,
+body.light-theme .roadmap-content h3,
+body.light-theme .users-review h2,
+body.light-theme .users p,
+body.light-theme .sample-para-text,
+body.light-theme .sample-head,
+body.light-theme .stay-heading,
+body.light-theme .stay-text,
+body.light-theme footer p{
+    color: #333;
+}
+
+
+body.light-theme .main-images-content,
+body.light-theme .how-it-work-items,
+body.light-theme .roadmap-cards,
+body.light-theme .book-sample,
+body.light-theme .users,
+body.light-theme .form-block {
+    background-color: #fff;
+    color: #333;
+}
+
+body.light-theme .navbar-items button,
+body.light-theme .get-button-1,
+body.light-theme .floating-icon {
+    background-color: #5eb8fc;
+    color: #fff;
+}
+
+body.light-theme .get-button-2{
+    background-color: #726bff;
+    color: #fff;
+}
+
+body.light-theme .read-more:hover{
+    color: #5eb8fc;
+}
+
+body.light-theme footer a:hover{
+    color: #000;
+}
+
+body.light-theme .nav-item a:hover{
+    color: #726bff;
+}
+
+body.light-theme body{
+    background: #fff;
+}
+
+/* Toggle button CSS Changes in WebPage  Ends*/
+
